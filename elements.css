@@ -424,6 +424,9 @@
 	ul.pin li:before { content: ""; }
 	ul.fill-circle li:before { content: ""; }
 
+	ul.inline li { display: inline; margin-right: 5px; }
+	ul.skip-first li:first-of-type:before { content: none; }
+
 /* ==========================================================================
    #Dividers
    ========================================================================== */
