@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'iconfontcustom';
-	src:url('fonts/iconfontcustom.eot?jzaet');
-	src:url('fonts/iconfontcustom.eot?#iefixjzaet') format('embedded-opentype'),
-		url('fonts/iconfontcustom.woff?jzaet') format('woff'),
-		url('fonts/iconfontcustom.ttf?jzaet') format('truetype'),
-		url('fonts/iconfontcustom.svg?jzaet#iconfontcustom') format('svg');
+	src:url('iconfontcustom.eot?jzaet');
+	src:url('iconfontcustom.eot?#iefixjzaet') format('embedded-opentype'),
+		url('iconfontcustom.woff?jzaet') format('woff'),
+		url('iconfontcustom.ttf?jzaet') format('truetype'),
+		url('iconfontcustom.svg?jzaet#iconfontcustom') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
