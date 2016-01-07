@@ -31,35 +31,6 @@
 	}
 
 /* ==========================================================================
-   setDimensionsPieCharts
-   ========================================================================== */
-
-	function setDimensionsPieCharts() {
-
-		$(".pie-chart").each(function() {
-
-			var $t = $(this);
-			var n = $t.parent().width();
-			var r = $t.attr("data-barSize");
-
-			if (n < r) {
-				r = n;
-			}
-
-			$t.css("height", r);
-			$t.css("width", r);
-			$t.css("line-height", r + "px");
-
-			$t.find("i").css({
-				"line-height": r + "px",
-				"font-size": r / 3
-			});
-
-		});
-
-	}
-
-/* ==========================================================================
    animatePieCharts
    ========================================================================== */
 
@@ -70,18 +41,12 @@
 			$(".pie-chart:in-viewport").each(function() {
 
 				var $t = $(this);
-				var n = $t.parent().width();
-				var r = $t.attr("data-barSize");
-
-				if (n < r) {
-					r = n;
-				}
 
 				$t.easyPieChart({
 					animate: 1300,
 					lineCap: "square",
 					lineWidth: $t.attr("data-lineWidth"),
-					size: r,
+					size: $t.attr("data-barSize"),
 					barColor: $t.attr("data-barColor"),
 					trackColor: $t.attr("data-trackColor"),
 					scaleColor: "transparent",
@@ -102,8 +67,7 @@
    ========================================================================== */
 
 	$(document).ready(function() {
-		ieViewportFix();
-		setDimensionsPieCharts();
+		// ieViewportFix();
 		animatePieCharts();
 	});
 

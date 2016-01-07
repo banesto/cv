@@ -211,6 +211,11 @@
 			margin-left: 15px;
 		}
 
+		.span2.break {
+			width: 100%;
+			margin-left: 0;
+		}
+
 		.span3 {
 			width: 165px;
 			margin-left: 15px;
