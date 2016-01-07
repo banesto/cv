@@ -186,6 +186,8 @@
 		/*background-color: #f6f6f6;*/
 	}
 
+	#knowledge { margin-bottom: 20px; }
+
 	/*#skills .headline p span { background-color: #f6f6f6; }*/
 
 	.interests-list { list-style: none; }
@@ -248,6 +250,7 @@
 
 	.interests-list li:hover .interest-details { opacity: 1; }
 
+	.no-bottom { margin-bottom: 0; }
 
 /* ==========================================================================
    #Responsive
