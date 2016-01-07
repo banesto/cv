@@ -1,374 +1,275 @@
-/**
- * Name: layout.css
- * Version: 1.0.0
- *
- *	-
- *
- *	T.O.C
- *
- *	#General Layout
- *		#Header
- *		#Content
- *		#Footer
- *	#Page Styles
- *		#Nav
- *		#Personal Profile
- *		#Work Experience
- *		#Education
- *		#References
- *		#Skils
- *		#Portfolio
- *		#Contact
- *	#Responsive
- *		#Large Display
- *		#Smaller then 1024px width
- *		#Tablet (Portrait)
- *		#Mobile (Portrait and Landscape )
- *		#Mobile ( Landscape )
- */
-
 /* ==========================================================================
    #General Layout
    ========================================================================== */
 
-	#wrap { background-color: #fff; }
+  #wrap { background-color: #fff; }
 
 /* #Content
    ========================================================================== */
 
-	#content {
-		position: relative;
-		min-height: 300px;
-	}
+  #content {
+    position: relative;
+    min-height: 300px;
+  }
 
-	/* CV Sections */
+  /* CV Sections */
 
-	.cv-section {
-		padding-bottom: 50px;
-		border-bottom: 1px solid #e1e1e1;
-		margin-bottom: 60px;
-	}
+  .cv-section {
+    padding-bottom: 50px;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 60px;
+  }
 
-	.cv-section:last-child  {
-		padding-bottom: 0;
-		border-bottom: none;
-		margin-bottom: 0;
-	}
+  .cv-section:last-child  {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
 
-	/* CV Sections Title */
+  /* CV Sections Title */
 
-	.cv-section-title {
-		padding: 15px 0;
-		font-family: 'PT Sans', sans-serif;
-		font-size: 12px;
-		text-align: right;
-		text-transform: uppercase;
-	}
+  .cv-section-title {
+    padding: 15px 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 12px;
+    text-align: right;
+    text-transform: uppercase;
+  }
 
-	.cv-section-title p { margin-bottom: 5px; }
+  .cv-section-title p { margin-bottom: 5px; }
 
-	.cv-section-title h1 {
-		position: relative;
-		padding-bottom: 14px;
-	}
+  .cv-section-title h1 {
+    position: relative;
+    padding-bottom: 14px;
+  }
 
-	.cv-section-title h1:after {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		width: 100px;
-		border-bottom: 1px solid #e1e1e1;
-		content: "";
-	}
+  .cv-section-title h1:after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    border-bottom: 1px solid #e1e1e1;
+    content: "";
+  }
 
-	.cv-section-title h1 span { position: relative; }
+  .cv-section-title h1 span { position: relative; }
 
-	.cv-section-title h1 span small {
-		position: absolute;
-		top: -10px;
-		left: 0;
-		font: 12px 'PT Sans', sans-serif;
-	}
+  .cv-section-title h1 span small {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font: 12px 'PT Sans', sans-serif;
+  }
 
-	.cv-section-title h3 {
-		font-family: 'PT Sans Narrow', sans-serif;
-		font-weight: 700;
-		letter-spacing: 1px;
-	}
+  .cv-section-title h3 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
 
-	/* CV Item */
+  /* CV Item */
 
-	.cv-item {
-		padding: 15px 0 5px 30px;
-		border-left: 1px solid #e1e1e1;
-		margin-top: -10px;
-	}
-
-/* ==========================================================================
-   #Page Styles
-   ========================================================================== */
-
-	@media (min-width: 1024px) {
-
-		.stuck {
-			position: fixed !important;
-			top: 0;
-			width: 100% !important;
-			z-index: 1000;
-		}
-
-		#nav.stuck { background: #fff; }
-
-		#nav.stuck  .sf-menu > li > a {
-			padding: 9px 15px;
-			line-height: 35px;
-		}
-
-		#nav.stuck #logo {
-			height: 55px;
-			padding: 17px 25px;
-		}
-
-	}
-
+  .cv-item {
+    padding: 15px 0 5px 30px;
+    border-left: 1px solid #e1e1e1;
+    margin-top: -10px;
+  }
 
 /* #Personal Profile
    ========================================================================== */
 
-	#personal-profile { padding: 80px 0 80px 0; }
+  #personal-profile { padding: 80px 0 80px 0; }
 
-	.personal-details { list-style: none; }
+  .personal-details { list-style: none; }
 
-	.personal-details li {
-		padding: 9px 0;
-		border-bottom: 1px solid #e1e1e1;
-		color: #252525;
-	}
+  .personal-details li {
+    padding: 9px 0;
+    border-bottom: 1px solid #e1e1e1;
+    color: #252525;
+  }
 
-	.personal-details li a { color: #252525; }
+  .personal-details li a { color: #252525; }
 
-	.personal-details li:first-child { padding-top: 0; }
-	.personal-details li:last-child { border-bottom: none; }
+  .personal-details li:first-child { padding-top: 0; }
+  .personal-details li:last-child { border-bottom: none; }
 
 /* #Work Experience
    ========================================================================== */
 
   #work-experience {
-		padding: 80px 0 80px 0;
-		background-color: #f6f6f6;
-	}
+    padding: 80px 0 80px 0;
+    background-color: #f6f6f6;
+  }
 
-	#work-experience .headline p span { background-color: #f6f6f6; }
+  #work-experience .headline p span { background-color: #f6f6f6; }
 
-	#latest-projects {
-		padding: 80px 0 80px 0;
-	}
+  #latest-projects {
+    padding: 80px 0 80px 0;
+  }
 
-	#latest-projects .cv-section-title {
-		padding: 0;
-	}
+  #latest-projects .cv-section-title {
+    padding: 0;
+  }
 
 /* #Education
    ========================================================================== */
 
   #education {
- 		padding: 80px 0 80px 0;
- 		background-color: #f6f6f6;
- 	}
+    padding: 80px 0 80px 0;
+    background-color: #f6f6f6;
+  }
 
- 	#education .headline p span { background-color: #f6f6f6; }
+  #education .headline p span { background-color: #f6f6f6; }
 
 /* #Skils
    ========================================================================== */
 
-  #skills {
-		padding: 80px 0 80px 0;
-		/*background-color: #f6f6f6;*/
-	}
+  #skills { padding: 80px 0 80px 0; }
 
-	#knowledge { margin-bottom: 20px; }
+  #knowledge { margin-bottom: 20px; }
 
-	/*#skills .headline p span { background-color: #f6f6f6; }*/
+  .interests-list { list-style: none; }
 
-	.interests-list { list-style: none; }
+  .interests-list li {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
 
-	.interests-list li {
-		position: relative;
-		float: left;
-		margin-right: 30px;
-		text-align: center;
-	}
+  .interests-list li:last-child { margin-right: 0; }
 
-	.interests-list li:last-child { margin-right: 0; }
+  .interests-list li > p { margin-bottom: 0; }
 
-	.interests-list li > p { margin-bottom: 0; }
+  .interests-list li > p img {
+    display: block;
+    width: 148px;
+    height: 148px;
+    padding: 10px;
+    border: 1px solid #252525;
+    margin-bottom: 5px;
+    color: #252525;
+    font-size: 25px;
+    line-height: 70px;
+  }
 
-	.interests-list li > p img {
-		display: block;
-		width: 148px;
-		height: 148px;
-		padding: 10px;
-		border: 1px solid #252525;
-		margin-bottom: 15px;
-		color: #252525;
-		font-size: 25px;
-		line-height: 70px;
-	}
+  .interest-details {
+    position: absolute;
+    top: -45px;
+    left: -45px;
+    width: 200px;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    text-align: left;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s;
+       -o-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+  }
 
-	.interest-details {
-		position: absolute;
-		top: -45px;
-		left: -45px;
-		width: 200px;
-		-webkit-box-sizing: border-box;
-		   -moz-box-sizing: border-box;
-				box-sizing: border-box;
-		padding: 25px;
-		background-color: rgba(0, 0, 0, 0.9);
-		color: #fff;
-		text-align: left;
-		opacity: 0;
-		-webkit-transition: opacity 0.3s;
-			 -o-transition: opacity 0.3s;
-				transition: opacity 0.3s;
-	}
+  .interests-list li:first-child .interest-details { left: 0; }
 
-	.interests-list li:first-child .interest-details { left: 0; }
+  .interest-details i {
+    display: inline-block;
+    margin: 0 15px 20px 0;
+    font-size: 25px;
+    vertical-align: text-top;
+  }
 
-	.interest-details i {
-		display: inline-block;
-		margin: 0 15px 20px 0;
-		font-size: 25px;
-		vertical-align: text-top;
-	}
+  .interest-details p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
 
-	.interest-details p {
-		font-size: 14px;
-		line-height: 24px;
-		margin-bottom: 0;
-	}
+  .interests-list li:hover .interest-details { opacity: 1; }
 
-	.interests-list li:hover .interest-details { opacity: 1; }
-
-	.no-bottom { margin-bottom: 0; }
+  .no-bottom { margin-bottom: 0; }
 
 /* ==========================================================================
    #Responsive
    ========================================================================== */
 
-/* #Large Display
-   ========================================================================== */
-
-	@media (min-width: 1400px) {
-
-		#wrap {}
-
-	}
-
-/* #Smaller then 1024px width
-   ========================================================================== */
-
-	@media (max-width: 1024px) {
-
-		#wrap {}
-
-		#content {}
-
-	}
-
 /* #Tablet (Portrait)
    ========================================================================== */
 
-	@media (min-width: 768px) and (max-width: 979px) {
+  @media (min-width: 768px) and (max-width: 979px) {
 
-		#wrap {}
+    .cv-section-title h1 { font-size: 32px; }
 
-		#content {}
+    .interests-list li { margin: 15px 30px 15px 0; }
 
-		.cv-section-title h1 { font-size: 32px; }
-
-		/* Skills */
-
-		.interests-list li { margin: 15px 30px 15px 0; }
-
-	}
+  }
 
 /* #Mobile (Portrait and Landscape )
    ========================================================================== */
 
-	@media (max-width: 767px) {
+  @media (max-width: 767px) {
 
-		body {
-			background: none;
-			background-color: #fff;
-		}
+    body {
+      background: none;
+      background-color: #fff;
+    }
 
-		#wrap {}
+    #wrap {}
 
-		#content {}
+    #content {}
 
-		.cv-item {
-			padding-left: 0;
-			border-left: none;
-		}
+    .cv-item {
+      padding-left: 0;
+      border-left: none;
+    }
 
-		.cv-section-title { text-align: left; }
+    .cv-section-title { text-align: left; }
 
-		.cv-section-title h1:after {
-			left: 0;
-		}
+    .cv-section-title h1:after {
+      left: 0;
+    }
 
-		#footer{}
+    .row { padding: 0 40px; }
 
-		.row { padding: 0 40px; }
+    .row .row {
+      width: auto;
+      padding: 0 20px;
+      margin: 0;
+    }
 
-		.row .row {
-			width: auto;
-			padding: 0 20px;
-			margin: 0;
-		}
+    p.last,
+    h1.last,
+    h2.last,
+    h3.last,
+    h4.last,
+    h5.last,
+    address.last,
+    ul.last,
+    ol.last { margin-bottom: 20px; }
 
-		p.last,
-		h1.last,
-		h2.last,
-		h3.last,
-		h4.last,
-		h5.last,
-		address.last,
-		ul.last,
-		ol.last { margin-bottom: 20px; }
+    .text-right { text-align: left; }
 
-		.text-right { text-align: left; }
+    .interests-list li:last-child { margin-bottom: 0; }
 
-		/* Skills */
+    .interest-details {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border: 1px solid #252525;
+      margin: 15px 0;
+      background-color: transparent;
+      color: #252525;
+      opacity: 1;
+    }
 
-		.interests-list li {
-			float: none;
-			margin-right: 0;
-			margin-bottom: 50px;
-			text-align: center;
-		}
-
-		.interests-list li:last-child { margin-bottom: 0; }
-		.interests-list li > p { display: none; }
-
-		.interest-details {
-			position: relative;
-			top: 0;
-			left: 0;
-			width: 100%;
-			border: 1px solid #252525;
-			margin: 15px 0;
-			background-color: transparent;
-			color: #252525;
-			opacity: 1;
-		}
-
-	}
+  }
 
 /* #Mobile ( Landscape )
   ========================================================================== */
 
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
-		.row { padding: 0 40px; }
-	}
+  @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .row { padding: 0 40px; }
+  }

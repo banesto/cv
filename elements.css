@@ -1,236 +1,166 @@
-/**
- * Name: elements.css
- * Version: 1.0.0
- *
- *	-
- *
- *	T.O.C
- *
- *	#Accordions
- *  #Alerts
- *  #Back to top
- *	#Buttons
- *	#Callout Boxes
- *	#Custom Lists
- *	#Dividers
- *	#Google Maps
- *  #Headlines
- *	#Icon Boxes
- *	#Milestones
- *	#Our Process
- *  #Page Loader
- *	#Parallax
- *	#Pie charts
- *	#Pricing Tables
- *	#ProgressBars
- *	#SocialMedia
- *	#Styled Tables
- *	#Tabs
- *	#Testimonials
- */
-
 /* ==========================================================================
    #Custom Lists
    ========================================================================== */
 
-	/**
- 	 * Custom lists
- 	 *
-	 * 1. unstyled list
-	 * 2. list with squares for bullets
-	 * 3. list with discs for bullets
-	 *
-	 */
+  ul.unstyled { list-style-type: none; }
+  ul.square { list-style-type: square; }
+  ul.circle { list-style-type: circle; }
 
-	ul.unstyled { list-style-type: none; } /* 1 */
-	ul.square { list-style-type: square; } /* 2 */
-	ul.circle { list-style-type: circle; } /* 3 */
+  ul.check,
+  ul.plus,
+  ul.pin,
+  ul.fill-circle { list-style: none; }
 
-	/**
- 	 * FontAwesome lists
- 	 *
-	 * 1. Check list
-	 * 2. Plus list
-	 * 3. Pin list
-	 * 4. Fill circle list
-	 *
-	 */
+  ul.check li:before,
+  ul.plus li:before,
+  ul.pin li:before,
+  ul.fill-circle li:before {
+    position: relative;
+    top: -2px;
+    width: auto;
+    height: auto;
+    margin-right: 8px;
+    font-family: 'FontAwesome';
+    font-size: 10px;
+    font-style: normal;
+  }
 
-	ul.check,								/* 1 */
-	ul.plus,								/* 2 */
-	ul.pin,									/* 3 */
-	ul.fill-circle { list-style: none; }	/* 4 */
+  ul.fill-circle li:before { font-size: 7px; }
 
-	ul.check li:before,
-	ul.plus li:before,
-	ul.pin li:before,
-	ul.fill-circle li:before {
-		position: relative;
-		top: -2px;
-		width: auto;
-		height: auto;
-		margin-right: 8px;
-		font-family: 'FontAwesome';
-		font-size: 10px;
-		font-style: normal;
-	}
+  ul.check li:before { content: ""; }
+  ul.plus li:before { content: ""; }
+  ul.pin li:before { content: ""; }
+  ul.fill-circle li:before { content: ""; }
 
-	ul.fill-circle li:before { font-size: 7px; }
-
-	ul.check li:before { content: ""; }
-	ul.plus li:before { content: ""; }
-	ul.pin li:before { content: ""; }
-	ul.fill-circle li:before { content: ""; }
-
-	ul.inline li { display: inline; margin-right: 5px; }
-	ul.skip-first li:first-of-type:before { content: none; }
-
-/* ==========================================================================
-   #Dividers
-   ========================================================================== */
-
-	.divider { margin: 30px 0; }
-
-	.divider.single-line { border-top: 1px solid #e2e2e2; }
-
-	.divider.double-line { border-top: 4px double #e2e2e2; }
-
-	.divider.single-dotted {
-		 height: 1px;
-		 background: url(../images/bg-single-dotted.gif) repeat-x top left ;
-	}
-
-	.divider.double-dotted {
-		height: 4px;
-		background: url(../images/bg-double-dotted.gif) repeat-x top left;
-	}
+  ul.inline li { display: inline; margin-right: 5px; }
+  ul.skip-first li:first-of-type:before { content: none; }
 
 /* ==========================================================================
    #Headlines
    ========================================================================== */
 
-	.headline {
-		position: relative;
-		display: inline-block;
-		border: 1px solid #252525;
-		margin-bottom: 80px;
-		color: #252525;
-		font: 12px 'PT Sans', sans-serif;
-		line-height: 20px;
-		text-align: center;
-	}
+  .headline {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #252525;
+    margin-bottom: 80px;
+    color: #252525;
+    font: 12px 'PT Sans', sans-serif;
+    line-height: 20px;
+    text-align: center;
+  }
 
-	.headline h1 {
-		padding: 10px 15px;
-		margin-bottom: 0;
-		text-transform: uppercase;
-		line-height: 53px;
-	}
+  .headline h1 {
+    padding: 10px 15px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    line-height: 53px;
+  }
 
-	.headline h2 {
-		padding: 30px 40px;
-		margin-bottom: 0;
-		text-transform: uppercase;
-		line-height: 24px;
-	}
+  .headline h2 {
+    padding: 30px 40px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    line-height: 24px;
+  }
 
-	.headline p {
-		position: absolute;
-		top: -10px;
-		right: 0;
-		left: 0;
-		letter-spacing: 1px;
- 		text-transform: uppercase;
-	}
+  .headline p {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    left: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
 
-	.headline p span {
-		padding: 0 10px;
-		background-color: #fff;
-	}
+  .headline p span {
+    padding: 0 10px;
+    background-color: #fff;
+  }
 
 /* ==========================================================================
    #Pie charts
    ========================================================================== */
 
-	.pie-chart {
-		position: relative;
-		margin: 0 auto 30px auto;
-		text-align: center;
-	}
+  .pie-chart {
+    position: relative;
+    margin: 0 auto 30px auto;
+    text-align: center;
+  }
 
-	.pie-chart canvas {
-		position: absolute;
-		z-index: 1;
-		top: 0;
-		left: 0;
-	}
+  .pie-chart canvas {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
 
-	.pie-chart i,
-	.pie-chart .pie-chart-custom-text,
-	.pie-chart .pie-chart-percent {
-		position: absolute;
-		z-index: 10;
-		top: 0;
-		left: 0;
-		display: block;
-		width: 100%;
-		text-align: center;
-	}
+  .pie-chart i,
+  .pie-chart .pie-chart-custom-text,
+  .pie-chart .pie-chart-percent {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 
-	.pie-chart img {
-		max-width: 100%;
-		vertical-align: middle;
-	}
+  .pie-chart img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
 
-	.pie-chart .pie-chart-custom-text {
-		margin-top: 52px;
-		font-size: 16px;
-		line-height: 24px;
-		text-transform: uppercase;
-	}
+  .pie-chart .pie-chart-custom-text {
+    margin-top: 52px;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
 
-	.pie-chart .pie-chart-custom-text span { font: 15px 'Oswald', sans-serif; }
+  .pie-chart .pie-chart-custom-text span { font: 15px 'Oswald', sans-serif; }
 
-	.pie-chart .pie-chart-percent {
-		font-size: 16px;
-		font-weight: 700;
-	}
+  .pie-chart .pie-chart-percent {
+    font-size: 16px;
+    font-weight: 700;
+  }
 
-	.pie-chart-description {
-		display: block;
-		font-size: 12px;
-		text-align: center;
-	}
+  .pie-chart-description {
+    display: block;
+    font-size: 12px;
+    text-align: center;
+  }
 
-	@media (min-width: 1400px) {
+  @media (min-width: 1400px) {
 
-		.pie-chart .pie-chart-custom-text { margin-top: 52px; }
+    .pie-chart .pie-chart-custom-text { margin-top: 52px; }
 
-	}
+  }
 
-	@media (min-width: 768px) and (max-width: 979px) {
+  @media (min-width: 768px) and (max-width: 979px) {
 
-		.pie-chart .pie-chart-custom-text { margin-top: 52px; }
+    .pie-chart .pie-chart-custom-text { margin-top: 52px; }
 
-	}
+  }
 
-	@media (max-width: 767px) {
+  @media (max-width: 767px) {
 
-		.pie-chart .pie-chart-custom-text { margin-top: 52px; }
+    .pie-chart .pie-chart-custom-text { margin-top: 52px; }
 
-	}
+  }
 
-	a.github {
-		color: #5f5f5f;
-		text-decoration: none;
-		font-weight: bold;
-	}
+  a.github {
+    color: #5f5f5f;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-	a.github:before {
-		content: "\f09b";
-		font-size: 20px;
-		font-family: 'FontAwesome';
-		color: #5f5f5f;
-		vertical-align: top;
-		padding-right: 3px;
-	}
+  a.github:before {
+    content: "\f09b";
+    font-size: 20px;
+    font-family: 'FontAwesome';
+    color: #5f5f5f;
+    vertical-align: top;
+    padding-right: 3px;
+  }
