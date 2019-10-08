@@ -14,6 +14,10 @@
   <link rel="stylesheet" href="elements.css">
   <link rel="stylesheet" href="layout.css">
 
+
+  <link rel='image_src' href="http://ernests.info/images/400x400.jpg">
+  <meta property='og:image' content="http://ernests.info/images/400x400.jpg" />
+
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
@@ -44,7 +48,6 @@
               <li>Name: Ernests Kečko</li>
               <li>Date of birth: 8th of February, 1984</li>
               <li>Nationality: Latvian</li>
-              <li>Family: </li>
               <li>Location: Riga, Latvia</li>
               <li>Phone: +371 28353753</li>
               <li>Email: <a href="mailto:ernests.kecko@gmail.com">ernests.kecko@gmail.com</a></li>
@@ -72,10 +75,30 @@
           </div><!-- end .span12 -->
         </div><!-- end .row -->
 
+
         <div class="row cv-section">
           <div class="span3">
             <div class="cv-section-title">
-              <h1><span>2012<small>November</small></span>-<span>Present</span></h1>
+              <h1><span>2016<small>May</small></span>-<span>Present</span></h1>
+              <h3>Ask.fm</h3>
+              <p>Software Engineer</p>
+            </div><!-- end .cv-section-title -->
+          </div><!-- end .span3 -->
+          <div class="span9">
+            <div class="cv-item">
+              <h3 class="text-uppercase">Job Description</h3>
+              <ul class="check">
+                <li>Developing and maintaining front-end for Top 10 social network platforms in the world - Ask.fm (Ruby on Rails, HTML, SCSS, Javascript).</li>
+                <li>Front-end &amp; back-end development of supporting sites - various content moderation apps (Ruby on Rails, HTML, SCSS, Javascript, Redis) and multi language information sites (PHP/Wordpress, SCSS, node.js).</li>
+              </ul>
+            </div><!-- end .cv-item -->
+          </div><!-- end .span9 -->
+        </div><!-- end .cv-section -->
+
+        <div class="row cv-section">
+          <div class="span3">
+            <div class="cv-section-title">
+              <h1><span>2012<small>November</small></span>-<span>2016<small>May</small></span></h1>
               <h3>Tieto</h3>
               <p>Technical consultant</p>
             </div><!-- end .cv-section-title -->
@@ -198,7 +221,86 @@
         <div class="row cv-section">
           <div class="span3">
             <div class="cv-section-title">
-              <h1><span>2015</span>-<span>Present</span></h1>
+              <h1><span>2016</span>-<span>Present</span></h1>
+              <h3>Ask.fm Web</h3>
+            </div><!-- end .cv-section-title -->
+          </div><!-- end .span3 -->
+          <div class="span9">
+            <div class="cv-item">
+              <h3 class="text-uppercase">Project Description</h3>
+              <p>One of the most popular social networks in the world. Web front-end is running on Ruby on Rails, which communicates to Java middleware via REST API.</p>
+              <strong>Features:</strong>
+              <ul class="pin">
+                <li>Ability to maintain your profile, ask and answer questions anonymousky or publicly and receive 'likes' from other users.</li>
+                <li>Customizable color theme, emoodji, avatar.</li>
+                <li>Ability to 'follow' &amp; 'star' various users and receive notification about their activity.</li>
+              </ul>
+              <strong>Accomplishments</strong>
+              <ul class="check">
+                <li>Developing brand new feature 'Photo polls' which enables users to upload two images and start a poll, where users can vote on either of the two images.</li>
+                <li>Encouraging to involve in activities by creating null states for newly registered users.</li>
+                <li>Upgrade &amp; refactor error messages for signup, login, password recovery so that they contain more meaningful explanation and increase registration rate.</li>
+                <li>Feed improvements - shortening rich media content answers into previews by parsing HTML content and making sure user can see more answers.</li>
+                <li>Improve mechanism for managing regular and seasonal emoodjis on user profile.</li>
+                <li>Redesign &amp; improve user profile page by distinguishing profile fields and adding profile gallery.</li>
+                <li>Introduce 'Discovery feed' (most popular content in current user's language &amp; geography) and make it a default page for defined segment of users.</li>
+                <li>Active participation in migrating to new data center.</li>
+                <li>Maintenance – bugfixes for wide range of devices, operating systems and browsers, refactorings.</li>
+              </ul>
+              <strong>Technologies</strong>
+              <ul class="fill-circle inline skip-first">
+                <li>Ruby on Rails</li>
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>Javascript</li>
+                <li>jQuery</li>
+                <li>Redis</li>
+              </ul>
+            </div><!-- end .cv-item -->
+          </div><!-- end .span9 -->
+        </div><!-- end .cv-section -->
+
+        <div class="row cv-section">
+          <div class="span3">
+            <div class="cv-section-title">
+              <h1><span>2016</span>-<span>Present</span></h1>
+              <h3>Ask.fm Moderation App</h3>
+            </div><!-- end .cv-section-title -->
+          </div><!-- end .span3 -->
+          <div class="span9">
+            <div class="cv-item">
+              <h3 class="text-uppercase">Project Description</h3>
+              <p>Ruby on Rails app that is used by content moderators to monitor inappropriate user content.</p>
+              <strong>Features:</strong>
+              <ul class="pin">
+                <li>Search for users and their content to validate 'red flags' given by automatic vocabulary checker.</li>
+                <li>User administration, suspension, banning.</li>
+                <li>Promoted answer &amp; daily question administration.</li>
+              </ul>
+              <strong>Accomplishments</strong>
+              <ul class="check">
+                <li>Added support for 'Photo polls' entity - ability to view, search &amp; destroy.</li>
+                <li>Performance upgrade for media lookup - search for user content based on image url attached to it.</li>
+                <li>Active participation in migrating to new data center.</li>
+                <li>Maintenance – bugfixes &amp; refactorings.</li>
+              </ul>
+              <strong>Technologies</strong>
+              <ul class="fill-circle inline skip-first">
+                <li>Ruby on Rails</li>
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>Javascript</li>
+                <li>jQuery</li>
+                <li>MySQL</li>
+              </ul>
+            </div><!-- end .cv-item -->
+          </div><!-- end .span9 -->
+        </div><!-- end .cv-section -->
+
+        <div class="row cv-section">
+          <div class="span3">
+            <div class="cv-section-title">
+              <h1><span>2015</span>-<span>2016</span></h1>
               <h3>Tieto TopBar</h3>
             </div><!-- end .cv-section-title -->
           </div><!-- end .span3 -->
@@ -243,7 +345,7 @@
         <div class="row cv-section">
           <div class="span3">
             <div class="cv-section-title">
-              <h1><span>2015</span>-<span>Present</span></h1>
+              <h1><span>2015</span>-<span>2016</span></h1>
               <h3>Tieto Newsfeed</h3>
             </div><!-- end .cv-section-title -->
           </div><!-- end .span3 -->
@@ -278,7 +380,7 @@
         <div class="row cv-section">
           <div class="span3">
             <div class="cv-section-title">
-              <h1><span>2014</span>-<span>Present</span></h1>
+              <h1><span>2014</span>-<span>2016</span></h1>
               <h3>Tieto Vocabulary</h3>
             </div><!-- end .cv-section-title -->
           </div><!-- end .span3 -->
@@ -314,7 +416,7 @@
         <div class="row cv-section">
           <div class="span3">
             <div class="cv-section-title">
-              <h1><span>2014</span>-<span>Present</span></h1>
+              <h1><span>2014</span>-<span>2016</span></h1>
               <h3>Tieto Survey Tool</h3>
             </div><!-- end .cv-section-title -->
           </div><!-- end .span3 -->
@@ -326,7 +428,7 @@
               <ul class="pin">
                 <li>Ability to create questionnaires with different question types - single choice, multi choice, text.</li>
                 <li>Manage user access on department basis.</li>
-                <li>Export results to Excel.</li>
+                <li>Export results to Excel</li>
               </ul>
               <strong>Accomplishments</strong>
               <ul class="check">
@@ -573,5 +675,15 @@
   <script src="jquery.easypiechart.min.js"></script>
   <script src="custom.js"></script>
 
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-20991802-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </body>
 </html>
